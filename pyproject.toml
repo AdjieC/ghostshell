@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghostshell"
+version = "0.1.0"
+description = "A haunted terminal companion with open-source AI at its core"
+requires-python = ">=3.10"
+
+[project.scripts]
+ghostshell = "ghostshell.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ghostshell*"]
